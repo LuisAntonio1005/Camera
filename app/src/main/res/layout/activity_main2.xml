@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+
+    <!-- Vista de la cámara con margen rojo -->
+    <FrameLayout
+        android:id="@+id/cameraContainer"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <!-- Rectángulo rojo sin fondo -->
+        <SurfaceView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_below="@id/redRectangle" />
+
+
+
+        <!--        <View-->
+        <!--            android:id="@+id/redRectangle"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="71dp"-->
+
+        <!--            />-->
+        <View
+            android:id="@+id/overlayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:id="@+id/redRectangle"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/cameraView"
+            android:translationX="80dp"
+            android:translationY="135dp" />
+        <!--            android:translationX="50dp"-->
+        <!--            android:translationY="50dp"-->
+
+        <View
+            android:id="@+id/scaledAreaView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="551dp"
+            android:layout_alignParentTop="true"
+            android:text=""
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="173dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_below="@id/cameraView"
+            android:layout_gravity="bottom"
+            android:scaleType="fitCenter"
+            tools:layout_editor_absoluteX="-15dp"
+            tools:layout_editor_absoluteY="495dp" />
+
+        <Button
+            android:id="@+id/captureButton"
+            android:layout_width="146dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Capturar"
+            android:translationX="135dp"
+            android:translationY="280dp"/>
+
+        <EditText
+            android:id="@+id/turnoV"
+            android:layout_width="97dp"
+            android:layout_height="100dp"
+            android:text=""
+            android:hint="turno"
+            android:visibility="invisible">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/plantaV"
+            android:layout_width="97dp"
+            android:layout_height="100dp"
+            android:text=" "
+            android:hint="planta"
+            android:translationY="100dp"
+            android:visibility="invisible">
+
+        </EditText>
+        <EditText
+            android:id="@+id/telarV"
+            android:layout_width="97dp"
+            android:layout_height="100dp"
+            android:text=" "
+            android:hint="planta"
+            android:translationY="100dp"
+            android:visibility="invisible">
+
+        </EditText>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

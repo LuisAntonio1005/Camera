@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    tools:context=".FormUno">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/per"
+            android:layout_width="83dp"
+            android:layout_height="72dp"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:text="permisos"
+            android:textSize="12dp"
+            android:translationY="-25dp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="109dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtTelar"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:hint="No.Telar"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:translationX="25dp">
+
+            </EditText>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="50dp" />
+
+            <Button
+                android:id="@+id/cap"
+                android:layout_width="225dp"
+                android:layout_height="72dp"
+                android:layout_margin="30dp"
+                android:layout_weight="1"
+                android:text="Leer C.B"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="131dp"
+            android:layout_height="188dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="8dp"
+                android:background="#837EA87E"
+                android:text="Turno"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="25sp"
+                android:translationY="18dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/txtTurno"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:hint="No.Turno"
+                android:textAlignment="center"
+                android:translationY="25dp"
+                android:visibility="invisible">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="188dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="8dp"
+                android:background="#837EA87E"
+                android:text="Planta"
+                android:textAlignment="center"
+                android:textColor="#040404"
+                android:textSize="25sp"
+                android:translationY="18dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/txtPlanta"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:hint="No.Planta"
+
+                android:textAlignment="center"
+                android:translationY="25dp"
+                android:visibility="invisible">
+
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:hint="Marca"
+            android:textAlignment="center"
+            android:translationX="25dp"
+            android:inputType="number">
+
+        </EditText>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="225dp"
+            android:layout_height="72dp"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:text="capturar"
+            android:textSize="12dp"
+            android:translationY="-35dp"
+            tools:ignore="TextSizeCheck" />
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="362dp"
+            android:layout_height="309dp"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <Button
+                android:id="@+id/can"
+                android:layout_width="182dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="cancelar" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="182dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:text="guardar" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="182dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:text="ver" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:id="@+id/csv"
+                android:layout_width="182dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:text="obtener csv" />
+
+        </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Camera</string>
+    <string name="inst">Los permisos son necesarios para el correcto funcionamiento de la aplicación</string>
+    <dimen name="red_rectangle_margin_top">16dp</dimen>
+
+</resources>
